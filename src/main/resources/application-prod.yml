@@ -1,0 +1,15 @@
+spring:
+  resources:
+    static-locations:
+    - file:/data/html
+  datasource:
+    url: jdbc:mysql://192.168.1.113/wallet?useSSL=false
+    username: root
+    password: dbadmin@2018
+    driver-class-name: com.mysql.jdbc.Driver
+logging:
+  config: classpath:logger/app-dev.xml
+
+#app config
+app:
+  devMode: false

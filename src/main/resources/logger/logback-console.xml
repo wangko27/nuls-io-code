@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <timestamp key="LOG_TIME" datePattern="yyyy-MM-dd"/>
+    <property name="APP_NAME" value="wallet"/>
+    <property name="LOG_PATH" value="/data/log/java/dev/${APP_NAME}/${LOG_TIME}"/>
+    <property name="LOG_PATTEN" value="[%d{yyyy-MM-dd HH:mm:ss}][%thread][%level][%logger{24}][%L]%msg%n"/>
+
+    <contextName>${APP_NAME}</contextName>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>${LOG_PATTEN}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>

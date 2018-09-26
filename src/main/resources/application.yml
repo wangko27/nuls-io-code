@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: wallet
+  profiles:
+    active: local
+  jackson:
+    #date-format: yyyy-MM-dd HH:mm:ss
+    #joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    #default-property-inclusion:
+    time-zone: UTC
+server:
+  context-path: /
+  port: 8080
+  compression:
+    enabled: true
+  use-forward-headers: true
+
+#mybatis config
+mybatis:
+  configuration:
+    cache-enabled: true
+    lazy-loading-enabled: true
+    aggressive-lazy-loading: false
+    multiple-result-sets-enabled: true
+    use-column-label: true
+    auto-mapping-behavior: full
+    default-statement-timeout: 2000
+    map-underscore-to-camel-case: true
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/*Mapper.xml
+pagehelper:
+  helper-dialect: mysql
+#swagger API
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api/v1/api-docs
