@@ -70,6 +70,13 @@
             <version>1.51.0.0</version>
         </dependency>
 
+        <!-- nuls - sdk -->
+        <dependency>
+            <groupId>io.nuls.sdk</groupId>
+            <artifactId>sdk-all</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
