@@ -70,11 +70,35 @@
             <version>1.51.0.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.lambdaworks</groupId>
+            <artifactId>scrypt</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
         <!-- nuls - sdk -->
         <dependency>
             <groupId>io.nuls.sdk</groupId>
             <artifactId>sdk-all</artifactId>
             <version>1.0.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cedarsoftware</groupId>
+            <artifactId>java-util</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.madgag.spongycastle</groupId>
+            <artifactId>core</artifactId>
+            <version>1.58.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.madgag.spongycastle</groupId>
+            <artifactId>prov</artifactId>
+            <version>1.58.0.0</version>
         </dependency>
 
         <dependency>
